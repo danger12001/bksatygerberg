@@ -1,4 +1,21 @@
 var english = true;
+var nav1 = document.getElementById('nav1');
+var nav2 = document.getElementById('nav2');
+var nav3 = document.getElementById('nav3');
+var nav4 = document.getElementById('nav4');
+var snav1 = document.getElementById('snav1');
+var snav2 = document.getElementById('snav2');
+var snav3 = document.getElementById('snav3');
+var snav4 = document.getElementById('snav4');
+
+var nav1Title = {'eng': 'Join The Club!', 'afr': 'Sluuit Met Ons Aan!'};
+var nav2Title = {'eng': 'Hiking Reports', 'afr': 'Stap Raporte'};
+var nav3Title = {'eng': 'Program', 'afr': 'Program'};
+var nav4Title = {'eng': 'Contact Us', 'afr': 'Kontak Ons'};
+var snav1Title = {'eng': 'Join The Club!', 'afr': 'Sluuit Met Ons Aan!'};
+var snav2Title = {'eng': 'Hiking Reports', 'afr': 'Stap Raporte'};
+var snav3Title = {'eng': 'Program', 'afr': 'Program'};
+var snav4Title = {'eng': 'Contact Us', 'afr': 'Kontak Ons'};
 
 var home = document.getElementById('homeText');
 var nav = document.getElementById('navTitle');
@@ -22,6 +39,15 @@ var texts = {'home': homeText, 'join': joinText, 'newsletter': newsletterText, '
 
 function toggleLanguage(){
   if(english === true){
+    nav1.innerHTML = nav1Title.eng;
+    nav2.innerHTML = nav2Title.eng;
+    nav3.innerHTML = nav3Title.eng;
+    nav4.innerHTML = nav4Title.eng;
+    snav1.innerHTML = snav1Title.eng;
+    snav2.innerHTML = snav2Title.eng;
+    snav3.innerHTML = snav3Title.eng;
+    snav4.innerHTML = snav4Title.eng;
+
     home.innerHTML = texts.home.eng
     nav.innerHTML = texts.nav.eng
     join.innerHTML = texts.join.eng
@@ -31,6 +57,14 @@ function toggleLanguage(){
     language.innerHTML = "Change to  AFR <i class='flag-icon flag-icon-za '></i> "
     language2.innerHTML = "Change to  AFR <i class='flag-icon flag-icon-za '></i> "
   } else {
+    nav1.innerHTML = nav1Title.afr;
+    nav2.innerHTML = nav2Title.afr;
+    nav3.innerHTML = nav3Title.afr;
+    nav4.innerHTML = nav4Title.afr;
+    snav1.innerHTML = snav1Title.afr;
+    snav2.innerHTML = snav2Title.afr;
+    snav3.innerHTML = snav3Title.afr;
+    snav4.innerHTML = snav4Title.afr;
     nav.innerHTML = texts.nav.afr
     home.innerHTML = texts.home.afr
     join.innerHTML = texts.join.afr
