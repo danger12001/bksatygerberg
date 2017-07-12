@@ -24,7 +24,6 @@
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a id='nav1' href="#join">Join The Club!</a></li>
             <li><a id='nav2' href="#reports">Hiking Reports</a></li>
-            <li><a id='nav3' href="#program">Program</a></li>
             <li><a id='nav4' href="#contact">Contact Us</a></li>
             <li><a onClick='selectLanguage(!english)' id='language'></a></li>
 
@@ -32,7 +31,6 @@
           <ul id="slide-out" class="side-nav hide-on-med-and-up">
             <li><a id='snav1' href="#join">Join The Club!</a></li>
             <li><a id='snav2' href="#reports">Hiking Reports</a></li>
-            <li><a id='snav3' href="#program">Program</a></li>
             <li><a id='snav4' href="#contact">Contact Us</a></li>
             <li><a onClick='selectLanguage(!english)' id='language2'></a></li>
  </ul>
@@ -66,7 +64,7 @@
 
 
       <div id='join'  class='block col s12 m12 l12'  align='center'>
-        <h3 id='joinTitle' ></h3>
+        <h1 id='joinTitle' ></h1>
             <div class='row'>
         <div class='col s12 m12 l12'>
           <div class='text-container'>
@@ -80,14 +78,14 @@
 
           <ul class="collapsible popout" data-collapsible="accordion">
             <li>
-              <div class="collapsible-header">Download the forms</div>
-              <div class="collapsible-body" style='padding: 0 !important'>
+              <div class="collapsible-header" id='formDownloadTitle'>Download the forms</div>
+              <div class="collapsible-body">
                 <ul class="collection">
-                  <li class="collection-item"><a>BKSA Tygerberg Afdeling Konstitusie.doc</a></li>
-                  <li class="collection-item"><a>Aansoekvorm_Eng 2017.doc </a></li>
-                  <li class="collection-item"><a>Aansoekvorm_Afr  2017.doc </a></li>
-                  <li class="collection-item"><a>Ledegeld vir 2017 ENG.docx </a></li>
-                  <li class="collection-item"><a>Ledegeld vir 2017 AFR.docx </a></li>
+                  <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjY4MmUzZDg1NzU1NGNkNGY'>BKSA Tygerberg Afdeling Konstitusie.doc</a></li>
+                  <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjdhMzVmNmY5YzU1YzJiNjA'>Aansoekvorm_Afr  2017.doc </a></li>
+                  <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjdhY2I3NjAyY2FhYTJmNTI'>Aansoekvorm_Eng 2017.doc </a></li>
+                  <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjY1ODU0YzFkNjVjMGRhMGM'>Ledegeld vir 2017 AFR.docx </a></li>
+                  <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjdkYTBkNmU4NTNmNWJiODY'>Ledegeld vir 2017 ENG.docx </a></li>
                 </ul>
               </div>
             </li>
@@ -101,55 +99,67 @@
       </div>
       <div id='reports' class='block col s12 m12 l12' align='center'>
         <h1>Reports</h1>
+        <div class='text-container'>
+        <p id='programText'></p>
+        <a  target="_blank"  href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjQyMTU1NWM2ZTEzOTgyYWE'>Click here to download the program!</a>
+      <!-- </div> -->
         <ul class="collapsible" data-collapsible="accordion">
           <li>
             <div class="collapsible-header">2017</div>
             <div class="collapsible-body">
               <ul class="collection">
-                   <li class="collection-item"><a>KLEINMONDNAWEEKJUN2017.pdf</a></li>
-                   <li class="collection-item"><a>KLEINMONDNAWEEKJUN2017.pdf</a></li>
-                   <!-- <li class="collection-item">Alvin</li> -->
-                   <!-- <li class="collection-item">Alvin</li> -->
-                   <!-- <li class="collection-item">Alvin</li> -->
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjZlNGVmYTFlOGFlZWE5ZGY'>KLEINMONDNAWEEKJUN2017.pdf</a></li>
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjE2NWZmMjBmZjBiYjc5ZGI'>Tafelberg Left Face 28 Januarie 2017.pdf</a></li>
+
                  </ul>
 
             </div>
           </li>
           <li>
             <div class="collapsible-header">2015</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-body">
+              <ul class="collection">
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjIzZGQwMmVmZmU3YmFiNjQ'>Bobbejaanskloof 14 Februarie.pdf</a></li>
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjNlOTBmMjM1MGUwZWI2YmU'>Kaaimansgat 13 Maart.pdf</a></li>
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjI4MTFhYzQ0MTA3YjdmNWU'>Nursery Buttress 17 Jan.pdf</a></li>
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjUwMzAyN2Q0YmJiMTY1Y2E'>Rietrivier Canyon 7 Oktober.pdf</a></li>
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjVkODdjMzkwMTliMDc1Nzc'>Shipwreck 25 April.pdf</a></li>
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjdlMTI5MGJhYWIzNTAwYTI'>Somersetgift 12 September.pdf</a></li>
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjUwOGJhNjM0ZTAxYjY4OGQ'>Thomas Hut 8 Augustus.pdf</a></li>
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjEyOTk0ZmY5ZDg1MjAwZmE'>Tsitsikamma 11 Junie.pdf</a></li>
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjcyMWY4OGYxOTY2ZGM1N2M'>Witrivier Kloofstap 1 Februarie.pdf</a></li>
+              </ul>
+            </div>
           </li>
           <li>
             <div class="collapsible-header">2014</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-          </li>
-        </ul>
-
-        <div class='text-container'>
-          <p id='newsletterText'></p>
-        </div>
-        <ul class="collapsible" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header">Newsletters</div>
             <div class="collapsible-body">
               <ul class="collection">
-                <li class="collection-item"><a>KLEINMONDNAWEEKJUN2017.pdf</a></li>
-                <li class="collection-item"><a>KLEINMONDNAWEEKJUN2017.pdf</a></li>
-                <!-- <li class="collection-item">Alvin</li> -->
-                <!-- <li class="collection-item">Alvin</li> -->
-                <!-- <li class="collection-item">Alvin</li> -->
+                <li class="collection-item"><a target='_blank' href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjM0ZmEwYWQ4MzdjYzhjODQ'>Leeuwenboschfontein 21 November.pdf</a></li>
+
               </ul>
             </div>
           </li>
         </ul>
 
+        <!-- <div class='text-container'> -->
+          <p id='newsletterText'></p>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header active"></div>
+            <div class="collapsible-body">
+              <ul class="collection">
+                <li class="collection-item"><a>KLEINMONDNAWEEKJUN2017.pdf</a></li>
+                <li class="collection-item"><a>KLEINMONDNAWEEKJUN2017.pdf</a></li>
+
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div id='program' class='block col s12 m12 l12' align='center'>
-        <div class='text-container'>
-        <p id='programText'></p>
-        <a  target="_blank"  href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjQyMTU1NWM2ZTEzOTgyYWE'>Click here to download the program!</a>
+
       </div>
-      </div>
+
 
     </div>
 
@@ -203,8 +213,8 @@
             </div>
             <div class="footer-copyright">
               <div class="container">
-              © 2014 Copyright Text
-              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+              © 2017 Copyright Text
+              <a class="grey-text text-lighten-4 right" href="https://web.facebook.com/tygerbergbksa/?_rdr">Find us on Facebook!</a>
               </div>
             </div>
           </footer>

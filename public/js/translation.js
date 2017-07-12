@@ -1,22 +1,20 @@
 var english = true;
 var nav1 = document.getElementById('nav1');
 var nav2 = document.getElementById('nav2');
-var nav3 = document.getElementById('nav3');
 var nav4 = document.getElementById('nav4');
 var snav1 = document.getElementById('snav1');
 var snav2 = document.getElementById('snav2');
-var snav3 = document.getElementById('snav3');
 var snav4 = document.getElementById('snav4');
 
 var nav1Title = {'eng': 'Join The Club!', 'afr': 'Sluuit Met Ons Aan!'};
 var nav2Title = {'eng': 'Hiking Reports', 'afr': 'Stap Raporte'};
-var nav3Title = {'eng': 'Program', 'afr': 'Program'};
 var nav4Title = {'eng': 'Contact Us', 'afr': 'Kontak Ons'};
 var snav1Title = {'eng': 'Join The Club!', 'afr': 'Sluuit Met Ons Aan!'};
 var snav2Title = {'eng': 'Hiking Reports', 'afr': 'Stap Raporte'};
-var snav3Title = {'eng': 'Program', 'afr': 'Program'};
 var snav4Title = {'eng': 'Contact Us', 'afr': 'Kontak Ons'};
 
+var formDownload = document.getElementById('formDownloadTitle');
+var formDownloadTitle = {'eng': 'Download the forms', 'afr': 'Laai af forms'};
 var home = document.getElementById('homeText');
 var nav = document.getElementById('navTitle');
 var join = document.getElementById('joinText');
@@ -33,7 +31,7 @@ var homeText = {'eng': "The Tygerberg Section of the Mountain Club of South Afri
 var programText = {'eng': "Download the program below to obtain details about hiking trips arranged by the tygerberg section. Please contact the leader to make a reservation. Preference will be given to members. ", 'afr' : "Laai die program hieronder af om die besonderhede van staptogte wat deur die Tygerberg Afdeling aangebied word te bekom. Kontak die betrokke leier om 'n plek bespreking te maak. Lede geniet voorkeur."};
 var newsletterText = {'eng': "Below is an archive of the Tygerberg section's old newsletters. It was decided in 2014 to no longer compile a comprehensive quarterly newsletter. Instead emails are send to the members on a more frequent basis.", 'afr' : "Onderstaande is 'n argief  van die Tygerberg Afdeling se nuusbriewe. Sedert 2014 is besluit om met die tegnologie veranderinge tred te hou en eerder gereelde e-posse aan klublede te stuur i.p.v. 'n lywige kwartaallikse nuusbrief."};
 var joinText = {'eng': "Download and complete the form below to join the Tygerberg Section. Return the completed membership application form to the secretary. All club members must support the goals as detailed in the constitution.",'afr' : "Om aan te sluit as lid van die Tygerberg Afdeling van die Bergklub moet onderstaande vorm afgelaai word. Voltooi die vorm en stuur aan die sekretaris van die klub. Alle lede van die klub moet die doelstellings soos uiteengesit in die konstitusie ondersteun."};
-var joinTitleText = {'eng': "Want to join us?",'afr' : "Wil jy aansluit?"};
+var joinTitleText = {'eng': "Want to join?",'afr' : "Wil jy aansluit?"};
 var texts = {'home': homeText, 'join': joinText, 'newsletter': newsletterText, 'program': programText, 'joinTitle': joinTitleText, 'nav': navTitle};
 
 
@@ -41,13 +39,12 @@ function toggleLanguage(){
   if(english === true){
     nav1.innerHTML = nav1Title.eng;
     nav2.innerHTML = nav2Title.eng;
-    nav3.innerHTML = nav3Title.eng;
     nav4.innerHTML = nav4Title.eng;
     snav1.innerHTML = snav1Title.eng;
     snav2.innerHTML = snav2Title.eng;
-    snav3.innerHTML = snav3Title.eng;
     snav4.innerHTML = snav4Title.eng;
 
+    formDownload.innerHTML = formDownloadTitle.eng;
     home.innerHTML = texts.home.eng
     nav.innerHTML = texts.nav.eng
     join.innerHTML = texts.join.eng
@@ -59,11 +56,10 @@ function toggleLanguage(){
   } else {
     nav1.innerHTML = nav1Title.afr;
     nav2.innerHTML = nav2Title.afr;
-    nav3.innerHTML = nav3Title.afr;
     nav4.innerHTML = nav4Title.afr;
     snav1.innerHTML = snav1Title.afr;
+    formDownload.innerHTML = formDownloadTitle.afr;
     snav2.innerHTML = snav2Title.afr;
-    snav3.innerHTML = snav3Title.afr;
     snav4.innerHTML = snav4Title.afr;
     nav.innerHTML = texts.nav.afr
     home.innerHTML = texts.home.afr
