@@ -19,6 +19,9 @@ padding: 5px;
 
 
 }
+#sidenav-overlay {
+    z-index: 995 !important;
+}
 .image {
 
 /*height: 400px;*/
