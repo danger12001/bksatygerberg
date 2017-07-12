@@ -7,6 +7,7 @@ var joinTitle = document.getElementById('joinTitle');
 var newsletter = document.getElementById('newsletterText');
 var program = document.getElementById('programText');
 var language = document.getElementById('language');
+var language2 = document.getElementById('language2');
 
 
 var navTitle = {'eng': 'MCSA Tygerberg', 'afr': 'BKSA Tygerberg Afdeling'};
@@ -28,6 +29,7 @@ function toggleLanguage(){
     newsletter.innerHTML = texts.newsletter.eng
     program.innerHTML = texts.program.eng
     language.innerHTML = "Change to  AFR <i class='flag-icon flag-icon-za '></i> "
+    language2.innerHTML = "Change to  AFR <i class='flag-icon flag-icon-za '></i> "
   } else {
     nav.innerHTML = texts.nav.afr
     home.innerHTML = texts.home.afr
@@ -36,6 +38,7 @@ function toggleLanguage(){
     program.innerHTML = texts.program.afr
     newsletter.innerHTML = texts.newsletter.afr
     language.innerHTML = "Change to ENG <i class='flag-icon flag-icon-gb '></i>"
+    language2.innerHTML = "Change to ENG <i class='flag-icon flag-icon-gb '></i>"
   }
 
 }

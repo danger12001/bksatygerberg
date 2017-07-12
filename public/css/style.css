@@ -1,6 +1,57 @@
+
+
 body {
-  background: url('../images/Background.jpg') !important;
+  background: url('../images/background2.jpg') !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+.bold {
+  font-weight: 600;
+}
+.text-container {
+background-color: white;
+border-radius: 25px;
+padding: 5px;
+}
+#homeText {
+  font-size: 2.5vh;
+
+
+}
+.image {
+
+/*height: 400px;*/
+height: 40%;
+width: 100%;
+margin-top: 10px;
+}
+
+#joinText {
+  font-size: 2.5vh;
+}
+#newsletterText {
+  font-size: 105%;
+  background-color: white;
+}
+#programText {
+  font-size: 105%;
+  background-color: white;
+}
+.logo {
+/*height: 150px;*/
+margin-bottom: 5%;
+border-radius: 360px;
+/*width: 100px;*/
+}
+.block {
+  height: 100vh;
+  /*width: 87vw !important;*/
+}
+.section1 {
+  height: 10vh;
+  width: 100vw;
+}
+.logo-container {
+  height: 1vh;
 }
