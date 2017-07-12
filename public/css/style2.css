@@ -7,3 +7,43 @@ body {
 .bold {
   font-weight: 600;
 }
+#homeText {
+  font-size: 25px;
+  background-color: white;
+
+  width: 90vw;
+}
+#joinText {
+  font-size: 25px;
+  background-color: white;
+
+  width: 90vw;
+}
+#newsletterText {
+  font-size: 25px;
+  background-color: white;
+
+  width: 90vw;
+}
+#programText {
+  font-size: 25px;
+  background-color: white;
+
+  width: 90vw;
+}
+.logo {
+/*height: 150px;*/
+margin-bottom: 5%;
+/*width: 100px;*/
+}
+.block {
+  height: 100vh;
+  width: 100vw !important;
+}
+.section1 {
+  height: 10vh;
+  width: 100vw;
+}
+.logo-container {
+  height: 1vh;
+}

@@ -16,7 +16,10 @@
    <body>
      <nav>
         <div class="nav-wrapper light-blue">
-          <a href="#home" id='navTitle' class="brand-logo">BKSA Tygerberg Afdeling</a>
+          <a href="#home" id='navTitle' class="brand-logo">
+            BKSA Tygerberg Afdeling
+
+          </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#join">Join The Club!</a></li>
             <li><a href="#reports">Hiking Reports</a></li>
@@ -28,14 +31,23 @@
         </div>
       </nav>
 
-      <div id='#home' align='center'>
-        <br/>
-        <img src='public/images/customLogo.jpg'/>
-<br/>
-  <div id='homeText'></div>
+
+      <div id='#home' class='block valign-wrapper' align='center'>
+        <div class='row'>
+
+          <div class='col s12 m12 l12'>
+            <img class='logo' src='public/images/customLogo.jpg'/>
+          </div>
+
+          <div class='col s12 m12 l12'>
+            <p id='homeText'></p>
+          </div>
+
+
+      </div>
       </div>
 
-      <div id='#join' align='center'>
+      <div id='#join'  class='block'  align='center'>
         <h1 id='joinTitle'></h1>
 
         <div id='joinText'></div>
@@ -44,7 +56,7 @@
 
 
       </div>
-      <div id='#reports' align='center'>
+      <div id='#reports' class='block' align='center'>
         <h1>Reports</h1>
         <ul class="collapsible" data-collapsible="accordion">
           <li>
@@ -88,7 +100,7 @@
         </ul>
 
       </div>
-      <div id='#program' align='center'>
+      <div id='#program' class='block' align='center'>
 
         <div id='programText'></div>
         <a  target="_blank"  href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxia3NhdHlnZXJiZXJnfGd4OjQyMTU1NWM2ZTEzOTgyYWE'>Click here to download the program!</a>
@@ -151,15 +163,14 @@
             </div>
           </footer>
 
+          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+          <script type="text/javascript" src="public/js/materialize.min.js"></script>
+          <script type="text/javascript" src="public/js/translation.js"></script>
 <script>
 $(document).ready(function(){
    $('.collapsible').collapsible();
  });
 
 </script>
-     <!--Import jQuery before materialize.js-->
-     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-     <script type="text/javascript" src="public/js/materialize.min.js"></script>
-     <script type="text/javascript" src="public/js/translation.js"></script>
    </body>
  </html>
