@@ -1,5 +1,5 @@
 body {
-  background: url('../images/Background.jpg') !important;
+  background: url('../images/background2.jpg') !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -8,11 +8,14 @@ body {
   font-weight: 600;
 }
 #homeText {
-  font-size: 25px;
+  font-size: 105%;
   background-color: white;
+  /*width: 90vw;*/
 
-  width: 90vw;
 }
+.text-container {
+}
+
 #joinText {
   font-size: 25px;
   background-color: white;
@@ -38,7 +41,7 @@ margin-bottom: 5%;
 }
 .block {
   height: 100vh;
-  width: 100vw !important;
+  /*width: 87vw !important;*/
 }
 .section1 {
   height: 10vh;
