@@ -48,7 +48,6 @@ Gallary
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="public/js/materialize.min.js"></script>
-<script type="text/javascript" src="public/js/translation.js"></script>
 <script>
 $(document).ready(function(){
    $('.collapsible').collapsible();
@@ -56,6 +55,19 @@ $(document).ready(function(){
 
  });
 
+</script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDWOldDUL2OOqJIgqX540NslP1AIXiDeEQ",
+    authDomain: "mcsatygerberg-9c00b.firebaseapp.com",
+    databaseURL: "https://mcsatygerberg-9c00b.firebaseio.com",
+    projectId: "mcsatygerberg-9c00b",
+    storageBucket: "mcsatygerberg-9c00b.appspot.com",
+    messagingSenderId: "683240872736"
+  };
+  firebase.initializeApp(config);
 </script>
    </body>
  </html>
