@@ -22,16 +22,12 @@
 
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="login.html"><div id="loginBtn">  Login  </div></a></li>
-            <li><a href="#"><div onClick="signout()" id="logoutBtn"> Logout </div></a></li>
             <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="join.html">Join Now!</a></li>
+            <li><a href="http://www.emailmeform.com/builder/form/aRbos44Jv0bUHGOxfCda" target="_blank">Join Now!</a></li>
             <li><a href="contact.html">Contact Us!</a></li>
 
           </ul>
           <ul id="slide-out" class="side-nav hide-on-med-and-up">
-            <li><a href="login.html"><div id="loginBtn">  Login  </div></a></li>
-            <li><a href="#"><div onClick="signout()" id="logoutBtn"> Logout </div></a></li>
             <li><a href="calendar.html">Calendar</a></li>
             <li><a href="join.html">Join Now!</a></li>
             <li><a href="contact.html">Contact Us!</a></li>
@@ -45,15 +41,58 @@
       </nav>
       </div>
 
-Contact Us
+
+<div class="loginContainer">
+<div id="firebaseui-auth-container"></div>
+<div id="loader">Loading...</div>
+
+</div>
 
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="public/js/materialize/materialize.min.js"></script>
 <script type="text/javascript" src="public/js/materialize/sideMenu.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
 <script type="text/javascript" src="public/js/firebase/init.js"></script>
+
+
+<script>
+var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+
+var uiConfig = {
+  callbacks: {
+    signInSuccess: function(currentUser, credential, redirectUrl) {
+    // User successfully signed in.
+    // Return type determines whether we continue the redirect automatically
+    // or whether we leave that to developer to handle.
+
+    return true;
+    },
+    uiShown: function() {
+    // The widget is rendered.
+    // Hide the loader.
+      document.getElementById('loader').style.display = 'none';
+    }
+  },
+  // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+  signInFlow: 'popup',
+  signInSuccessUrl: 'index.html',
+  signInOptions: [
+    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+  ],
+  // Terms of service url.
+  tosUrl: '<your-tos-url>'
+};
+
+ui.start('#firebaseui-auth-container', uiConfig);
+
+</script>
 <script type="text/javascript" src="public/js/firebase/auth.js"></script>
+
+
 
    </body>
  </html>
