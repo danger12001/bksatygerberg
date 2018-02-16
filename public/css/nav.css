@@ -1,0 +1,62 @@
+.top-nav {
+  width: 100%;
+  height: 45px;
+background-color: #e6e6e6;
+position: fixed;
+
+}
+.top-nav-btn {
+  float: right;
+  text-align: center;
+  /*padding-top: 8px;*/
+  font-size: 18px;
+  padding: 8px;
+  /*border-left: 1px solid #000000;*/
+  /*padding-right: 10px;*/
+
+}
+.top-nav-dropdown {
+  float: right;
+    width: 10%;
+    margin-top: 5px;
+    height: 35px;
+    font-size: 14px;
+}
+.nav-wrapper {
+  background-color: #29ABE2 !important;
+}
+.nav-logo {
+  width: 120px;
+  height: 120px;
+  margin-left: 20px;
+  margin-top: -30px;
+  margin-right: 40px;
+}
+.join-button {
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 30px;
+  background-color: #b71313;
+}
+.join-button:hover {
+  background-color: #910303;
+  /*background-image: url('../images/joinNowIconHover.png')*/
+  /*background-color: rgba(0, 0, 0, 0.8);*/
+
+}
+.nav-button {
+  font-size: 22px;
+}
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.nav-slider {
+  height: 220px !important;
+margin-top: 45px;
+}
+
+.carousel .carousel-item > img {
+  height: 220px;
+  /*background-size: contain;*/
+}
