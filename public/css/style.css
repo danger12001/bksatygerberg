@@ -3,6 +3,7 @@ body {
   background-color: #e6e6e6;
   /*overflow-y: scroll;*/
 }
+
 .row .col.cal1 {
   width: 14.2857142857%;
   margin-left: auto;
@@ -34,7 +35,7 @@ input:focus:not([read-only]) {
 	}
 
 .loginContainer {
-  margin: 15%;
+  margin: 5%;
 }
 .about-us-title {
   color: black;
@@ -98,17 +99,13 @@ input:focus:not([read-only]) {
   margin-bottom: -10px !important;
 }
 .calendar-container {
-  margin-left: 6%;
+  margin-left: 9%;
   margin-bottom: 20px !important;
-  /*position: absolute;*/
-  /*left: 5%;*/
-  /*display: block;*/
-  /*margin: auto !important;*/
 }
 
 .event-container {
   background-color: #ffffff;
-  width: 80%;
+  width: 70%;
   margin: auto;
   margin-bottom: 20px !important;
   padding: 10px;
@@ -116,6 +113,12 @@ input:focus:not([read-only]) {
 .event-title {
   font-size: 20px;
   font-weight: bold;
+  color: black !important;
+}
+.detail-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px;
 }
 .event-activity {
   color: #666666;
@@ -141,4 +144,43 @@ input:focus:not([read-only]) {
   bottom: 2;
   margin-left: 10px;
   font-size: 22px;
+  color: black !important;
+}
+.detail-date {
+  display: inline-block;
+  position: relative;
+  /*bottom: 2;*/
+  margin-left: 10px;
+  font-size: 35px;
+}
+.detail-permit {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.detail-container {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px !important;
+  height: 44%;
+}
+.detail-leader-container {
+  float: right;
+  margin-right: 80px;
+}
+.detail-leader-img {
+width: 150px;
+height: 150px;
+margin-left: 15px;
+margin-top: -100px;
+border-radius: 360px;
+border: 1px solid black;
+}
+.detail-leader {
+font-size: 20px;
+text-align: center;
+}
+.detail-leader-contact {
+font-size: 18px;
+text-align: center;
 }
