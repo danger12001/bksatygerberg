@@ -7,6 +7,8 @@
      <link type="text/css" rel="stylesheet" href="public/css/style.css"  media="screen,projection"/>
      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"  media="screen,projection"/>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
      <title id="title"></title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    </head>
@@ -66,31 +68,239 @@
       </div>
       <div class="carousel carousel-slider nav-slider">
         <a class="carousel-item" href="#one!"><img src="public/images/banner1.png"></a>
-        <a class="carousel-item" href="#one!"><img src="public/images/banner2.JPG"></a>
-        <a class="carousel-item" href="#one!"><img src="public/images/banner4.JPG"></a>
+        <a class="carousel-item" href="#one!"><img src="public/images/banner2.jpeg"></a>
+        <a class="carousel-item" href="#one!"><img src="public/images/banner3.jpeg"></a>
       </div>
 
       <!-- End Nav -->
 <div class='calendar-container'>
   <div class="row" style='margin: auto !important'>
 
-    <div id='jan' class="col s2 calendar-btn-selected" > </div>
-    <div id='feb' class="col s2 calendar-btn" > </div>
-    <div id='mar' class="col s2 calendar-btn" > </div>
-    <div id='apr' class="col s2 calendar-btn" > </div>
-    <div id='may' class="col s2 calendar-btn" > </div>
-    <div id='jun' class="col s2 calendar-btn" > </div>
+    <div id='jan' onClick='selectMonth("jan")' class="col s2 calendar-btn calendar-btn-selected" > </div>
+    <div id='feb' onClick='selectMonth("feb")' class="col s2 calendar-btn" > </div>
+    <div id='mar' onClick='selectMonth("mar")' class="col s2 calendar-btn" > </div>
+    <div id='apr' onClick='selectMonth("apr")' class="col s2 calendar-btn" > </div>
+    <div id='may' onClick='selectMonth("may")' class="col s2 calendar-btn" > </div>
+    <div id='jun' onClick='selectMonth("jun")' class="col s2 calendar-btn" > </div>
 
   </div>
   <div class="row">
-    <div id='jul' class="col s2 calendar-btn" > </div>
-    <div id='aug' class="col s2 calendar-btn" > </div>
-    <div id='sep' class="col s2 calendar-btn" > </div>
-    <div id='oct' class="col s2 calendar-btn" > </div>
-    <div id='nov' class="col s2 calendar-btn" > </div>
-    <div id='dec' class="col s2 calendar-btn" > </div>
+    <div id='jul' onClick='selectMonth("jul")' class="col s2 calendar-btn" > </div>
+    <div id='aug' onClick='selectMonth("aug")' class="col s2 calendar-btn" > </div>
+    <div id='sep' onClick='selectMonth("sep")' class="col s2 calendar-btn" > </div>
+    <div id='oct' onClick='selectMonth("oct")' class="col s2 calendar-btn" > </div>
+    <div id='nov' onClick='selectMonth("nov")' class="col s2 calendar-btn" > </div>
+    <div id='dec' onClick='selectMonth("dec")' class="col s2 calendar-btn" > </div>
 
   </div>
+
+</div>
+
+<div id='janContainer' style="margin-top: 40px;">
+  <div class='event-container '>
+    <div class='event-title'> Bring en braai by die Buckles  </div>
+    <div class='event-details'> View Details  </div>
+    <div> Difficulty - N/A </div>
+    <div class='event-activity'> Klubaand / AJV  </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> January 27, 2018  </div>
+  </div>
+</div>
+
+<div id='febContainer' style="margin-top: 40px;">
+  <div class='event-container '>
+    <div class='event-title'> Turrentpiek (Koue bokkeveld)  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - B3 </div>
+    <div class='event-activity'> Naweek  </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> February 02 - 04, 2018  </div>
+  </div>
+
+  <div class='event-container '>
+    <div class='event-title'> Gedenkdiens  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #009245'> Difficulty - A2 </div>
+    <div class='event-activity'> Dag  </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> February 25, 2018  </div>
+  </div>
+
+</div>
+<div id='marContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> Schacklton Valley, Du Toitskloof: slaap by die wrap(eerie)  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - B3 </div>
+    <div class='event-activity'> Naweek  </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> March 02 - 04, 2018  </div>
+  </div>
+
+  <div class='event-container '>
+    <div class='event-title'> Slanghoek Afgronde  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #910303'> Difficulty - C3 </div>
+    <div class='event-activity'> Naweek </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> March 23 - 25, 2018  </div>
+  </div>
+
+</div>
+<div id='aprContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> Brinkveepos (Bainskloof)  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - B3 </div>
+    <div class='event-activity'> Naweek  </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> April 13 - 15, 2018  </div>
+  </div>
+
+  <div class='event-container '>
+    <div class='event-title'> Boland Voetslaanpad: Landdroskop > Boesmanskloof Hut  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - B3 </div>
+    <div class='event-activity'> Naweek </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> April 27 - 29, 2018  </div>
+  </div>
+
+
+</div>
+<div id='mayContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> Die Gatjie Boskamp (Citrusdal)  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - A1/B3 </div>
+    <div class='event-activity'> Gesinsnaweek </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> May 18 - 20, 2018  </div>
+  </div>
+
+</div>
+<div id='junContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> No Events  </div>
+
+  </div>
+
+
+</div>
+<div id='julContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> Elanie en Terence: Sop 'n Dop  </div>
+    <div class='event-details'> View Details  </div>
+    <div> Difficulty - N/A </div>
+    <div class='event-activity'> Klubaand </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> July 27, 2018  </div>
+  </div>
+
+
+</div>
+<div id='augContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> Matroosberg  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - B3 </div>
+    <div class='event-activity'> Naweek </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> August 03 - 05, 2018  </div>
+  </div>
+
+  <div class='event-container '>
+    <div class='event-title'> Agterafelberg  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - B3 </div>
+    <div class='event-activity'> Naweek </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> August 18 - 19, 2018  </div>
+  </div>
+
+  <div class='event-container '>
+    <div class='event-title'> Melkbosstrand na Blouberg (Braai na die tyd by die Steyns)  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #009245'> Difficulty - A1 </div>
+    <div class='event-activity'> Dag </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> August 25, 2018  </div>
+  </div>
+
+
+</div>
+<div id='sepContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> Walvisroete  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - B2 </div>
+    <div class='event-activity'> Langstap </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> September 01 - 06, 2018  </div>
+  </div>
+
+  <div class='event-container '>
+    <div class='event-title'> Cederberg: Potjiekos Kompetisie (Wolfberg skeure & Maltese Kruis)  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - B2 </div>
+    <div class='event-activity'> Langnaweek </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> October 22 - 24, 2018  </div>
+  </div>
+
+</div>
+<div id='octContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> Klein Wellington Sneeukop (Bobbejaanskloof)  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #D9E021'> Difficulty - B3 </div>
+    <div class='event-activity'> Naweek </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> October 19 - 21, 2018  </div>
+  </div>
+
+</div>
+<div id='novContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> Carl & Sandra Lombard  </div>
+    <div class='event-details'> View Details  </div>
+    <div> Difficulty - N/A </div>
+    <div class='event-activity'> Klubaand </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> November 02, 2018  </div>
+  </div>
+
+  <div class='event-container '>
+    <div class='event-title'> Gesamentlike stap  </div>
+    <div class='event-details'> View Details  </div>
+    <div> Difficulty - T.B.A </div>
+    <div class='event-activity'> Langstap </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> November 10 - 11, 2018  </div>
+  </div>
+
+</div>
+<div id='decContainer' style="margin-top: 40px;">
+
+  <div class='event-container '>
+    <div class='event-title'> Cederberg: Crystal Pools omgewing  </div>
+    <div class='event-details'> View Details  </div>
+    <div style='color: #009245'> Difficulty - A2 </div>
+    <div class='event-activity'> Langstap </div>
+    <i class="material-icons">
+     date_range </i>  <div class='event-date'> December 07 - 10, 2018  </div>
+  </div>
+
+
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -104,6 +314,8 @@
 <script type="text/javascript" src="public/js/firebase/auth.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
     <script type="text/javascript" src="public/js/languagePrompt.js"></script>
+    <script type="text/javascript" src="public/js/calendar.js"></script>
+
 
    </body>
  </html>

@@ -122,7 +122,6 @@ $(document).on('click', '.SwalBtn2', function() {
     language = 'english';
     navElements.forEach(function(element){
       translations[language].forEach(function(translation){
-        console.log(translation.id, element.id)
         if(translation.id === element.id){
           if(element.element){
             element.element.innerHTML = translation.text;

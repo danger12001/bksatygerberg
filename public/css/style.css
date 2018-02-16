@@ -99,8 +99,46 @@ input:focus:not([read-only]) {
 }
 .calendar-container {
   margin-left: 6%;
+  margin-bottom: 20px !important;
   /*position: absolute;*/
   /*left: 5%;*/
   /*display: block;*/
   /*margin: auto !important;*/
+}
+
+.event-container {
+  background-color: #ffffff;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px !important;
+  padding: 10px;
+}
+.event-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.event-activity {
+  color: #666666;
+  font-size: 18px;
+}
+.event-details {
+  float: right;
+  background-color: #910303;
+  width: 130px;
+  color: white;
+  height: 35px;
+  font-size: 20px;
+  /*height: 50px;*/
+  padding-top: 2px;
+  margin-top: 10px;
+  text-align: center;
+  /*padding: 10px 5px 10px 10px;*/
+  margin-right: 25px;
+}
+.event-date {
+  display: inline-block;
+  position: relative;
+  bottom: 2;
+  margin-left: 10px;
+  font-size: 22px;
 }
