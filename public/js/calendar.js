@@ -54,6 +54,7 @@ calendarContainers.forEach(function(element) {
 
 var selectMonth = function(month){
   selectedMonth = month;
+
   calendarContainers.forEach(function(element) {
     if(element.element){
       if(element.id !== selectedMonth){

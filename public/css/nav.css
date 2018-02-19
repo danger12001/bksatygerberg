@@ -15,6 +15,9 @@ position: fixed;
   /*padding-right: 10px;*/
 
 }
+#logoutBtn {
+  /*display: none;*/
+}
 .top-nav-dropdown {
   float: right;
     width: 10%;
@@ -61,7 +64,9 @@ margin-top: 45px;
   /*background-size: contain;*/
 }
 
-
+#sidenav-overlay {
+  z-index: 996 !important;
+}
 
 @media only screen and (min-width: 950px) {
     .mobile-btn {
@@ -75,7 +80,8 @@ margin-top: 45px;
     }*/
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
+
   .nav-logo {
     /*display: n*/
     width: 50px;
@@ -94,8 +100,46 @@ margin-top: 45px;
   /*.mobile-banner {
     display: block;
   }*/
+
+}
+@media only screen and (max-width: 800px) {
+  .detail-leader-img {
+    display: none;
+  }
+  .detail-leader {
+    font-size: 25px !important;
+    text-align: left !important;
+    padding-left: 10px !important;
+  }
+  .detail-leader-container {
+    /*font-size: 15px !important;*/
+    /*margin: 0 auto !important;*/
+    float: left !important;
+  }
+  .detail-container div {
+    bottom: 0 !important;
+  }
+  .detail-container .material-icons {
+    display: none;
+  }
+  .detail-leader-contact {
+    text-align: left !important;
+    padding-left: 10px !important;
+    font-size: 25px !important;
+  }
+  .detail-date {
+    font-size: 20px !important;
+    position: static !important;
+    bottom: 0px !important;
+  }
+  .detail-title {
+    font-size: 25px !important;
+  }
 }
 @media only screen and (max-width: 650px) {
+  .event-details {
+    margin: 0 auto !important;
+  }
   .nav-logo {
     /*display: n*/
     width: 150px;

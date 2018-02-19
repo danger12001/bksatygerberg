@@ -1,6 +1,7 @@
 var loginButton = document.getElementById('loginBtn');
 var logoutButton = document.getElementById('logoutBtn');
 
+logoutButton.style.display = 'none';
 var signout = function(){
   firebase.auth().signOut().then(function() {
   // Sign-out successful.
@@ -15,6 +16,7 @@ initApp = function() {
 
        loginButton.style.display = 'none';
 
+       logoutButton.style.display = 'block';
       //  loginButton.onClick = signout();
 
        // User is signed in.
@@ -43,7 +45,6 @@ initApp = function() {
        // User is signed out.
 
 
-      logoutButton.style.display = 'none';
 
      }
    }, function(error) {
