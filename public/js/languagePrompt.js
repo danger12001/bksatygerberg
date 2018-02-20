@@ -13,7 +13,7 @@ var translations = {
     { id: 'events-btn', text: 'Events'},
     { id: 'about-us-title', text: 'About Us'},
     { id: 'about-us-text', text:
-        'The Tygerberg Section of the Mountain Club of South Africa (MCSA) was founded in 1979 and is one of the youngest of the 14 sections of the Mountain Club of South Africa. <br><br>The members are mostly from the northern suburbs of Cape Town.<br> <br>The Tygerberg section&#39;s activities are focused on hiking which varies from difficult wilderness hikes to family weekends with easy day hikes. <br> <br> The Mountain Club of South Africa was founded in 1891 and is one of only two mountain clubs in Africa which are affiliated to the world mountaineering body, the UIAA.'
+        'The Tygerberg Section of the Mountain Club of South Africa (MCSA) was founded in 1979 and is one of the youngest of the 14 sections of the Mountain Club of South Africa. <br><br>The members are mostly from the northern suburbs of Cape Town.<br> <br>The Tygerberg section&#39;s activities are focused on hiking which varies from difficult wilderness hikes to family weekends with easy day hikes. <br> <br> The Mountain Club of South Africa was founded in 1891 and is one of only two mountain clubs in Africa which are affiliated to the world mountaineering body, the UIAA.'
     },
     {id: 'jan', text: 'January'},
     {id: 'feb', text: 'February'},
