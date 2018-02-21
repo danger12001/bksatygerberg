@@ -277,3 +277,20 @@ text-align: center;
   /*margin: 0 auto;*/
   margin-left: 50px;
 }
+.archive-item {
+  width: 100%;
+  background-color: white;
+  height: 70px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  color: black !important;
+}
+.archive-item a {
+  color: black !important;
+}
+.archive-heading {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px;
+}
