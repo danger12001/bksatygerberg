@@ -193,6 +193,16 @@ margin-top: 45px;
   }
 }
 @media only screen and (max-width: 650px) {
+  .carousel.carousel-slider {
+    display: none !important;
+  }
+  .top-nav {
+    top: 0px !important;
+  }
+  .mobile-spacer {
+    margin-bottom: 100px !important;
+  }
+
   .event-details {
     margin: 0 auto !important;
   }
