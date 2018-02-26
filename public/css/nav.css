@@ -34,7 +34,7 @@ position: fixed;
   margin-left: 20px;
   margin-top: -30px;
   margin-right: 40px;
-  z-index: 999;
+  z-index: 9999999 !important;
 }
 .join-button {
   color: white;
@@ -193,6 +193,9 @@ margin-top: 45px;
   }
 }
 @media only screen and (max-width: 650px) {
+  .carousel.carousel-slider {
+    display: none !important;
+  }
   .carousel.carousel-slider {
     display: none !important;
   }
