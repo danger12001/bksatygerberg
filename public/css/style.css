@@ -242,7 +242,7 @@ text-align: center;
 }
 .contact-img {
   width: 205px;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   margin-top: 20px;
   margin-bottom: 20px;
   height: 205px;

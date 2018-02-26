@@ -30,6 +30,7 @@ var translations = {
     {id: 'contact-heading', 'text': 'Committee 2018'},
     {id: 'ch-1', text: 'Chairman'}, {id: 'ch-2', text: 'Vice Chairman'}, {id: 'ch-3', text: 'Secretary'}, {id: 'ch-4', text: 'Treasurer'}, {id: 'ch-5', text: 'Member for Hiking'}, {id: 'ch-6', text: 'Member for Communications'}, {id: 'ch-7', text: 'Member for Rock Climbing & Rescue'}, {id: 'ch-8', text: 'Property Manager'},
     {id: 'contact-details1', text: 'Contact Details'},{id: 'contact-details2', text: 'Contact Details'},{id: 'contact-details3', text: 'Contact Details'},{id: 'contact-details4', text: 'Contact Details'},{id: 'contact-details5', text: 'Contact Details'},{id: 'contact-details6', text: 'Contact Details'},{id: 'contact-details7', text: 'Contact Details'},{id: 'contact-details8', text: 'Contact Details'}
+    ,{id: 'archive-heading2', text: 'Newsletters'},{id: 'archive-heading1', text: 'Hiking Reports'},{id: 'archive-heading3', text: 'Members'}, {id: 'archivesBtn' ,text: 'Archives'}
   ],
   afrikaans: [
     { id: 'title', text: 'BKSA Tygerberg Afdeling' },
@@ -59,6 +60,7 @@ var translations = {
     {id: 'contact-heading', 'text': 'Bestuur 2018'},
     {id: 'ch-1', text: 'Voorsitter'}, {id: 'ch-2', text: 'Onder voorsitter '}, {id: 'ch-3', text: 'Sekretaresse'}, {id: 'ch-4', text: 'Tesourier'}, {id: 'ch-5', text: 'Lid vir Stap'}, {id: 'ch-6', text: ' Lid vir Skakeling'}, {id: 'ch-7', text: 'Lid vir Rotsklim & Berg redding'}, {id: 'ch-8', text: 'Grond Bestuurder'},
     ,{id: 'contact-details1', text: 'Kontak'},{id: 'contact-details2', text: 'Kontak'},{id: 'contact-details3', text: 'Kontak'},{id: 'contact-details4', text: 'Kontak'},{id: 'contact-details5', text: 'Kontak'},{id: 'contact-details6', text: 'Kontak'},{id: 'contact-details7', text: 'Kontak'},{id: 'contact-details8', text: 'Kontak'}
+    ,{id: 'archive-heading2', text: 'Bergnuus'},{id: 'archive-heading1', text: 'Stapverslae'},{id: 'archive-heading3', text: 'Lede'}, {id: 'archivesBtn' ,text: 'Argiewe'}
   ]
 }
 
@@ -68,7 +70,9 @@ var navElements = [
   {id: 'contact-us-btn'}, {id: 'events-btn'}, {id: 'about-us-title'}, {id: 'about-us-text'}, {id: 'jan'}, {id: 'feb'}, {id: 'mar'},
   {id: 'apr'}, {id: 'may'}, {id: 'jun'}, {id: 'jul'}, {id: 'aug'}, {id: 'sep'}, {id: 'oct'}, {id: 'nov'}, {id: 'dec'},
   {id: 'contact-heading'}, {id: 'ch-1'}, {id: 'ch-2'}, {id: 'ch-3'}, {id: 'ch-4'}, {id: 'ch-5'}, {id: 'ch-6'}, {id: 'ch-7'},
-  {id: 'ch-8'}, {id: 'contact-details1'}, {id: 'contact-details2'}, {id: 'contact-details3'}, {id: 'contact-details4'}, {id: 'contact-details5'}, {id: 'contact-details6'}, {id: 'contact-details7'}, {id: 'contact-details8'}
+  {id: 'ch-8'}, {id: 'contact-details1'}, {id: 'contact-details2'}, {id: 'contact-details3'}, {id: 'contact-details4'},
+  {id: 'contact-details5'}, {id: 'contact-details6'}, {id: 'contact-details7'}, {id: 'contact-details8'},
+  {id: 'archive-heading2'},{id: 'archive-heading1'},{id: 'archive-heading3'}, {id: 'archivesBtn'}
 ];
 
 for(var x = 0; x< navElements.length; x++){
