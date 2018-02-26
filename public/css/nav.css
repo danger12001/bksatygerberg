@@ -34,6 +34,7 @@ position: fixed;
   margin-left: 20px;
   margin-top: -30px;
   margin-right: 40px;
+  z-index: 999;
 }
 .join-button {
   color: white;
@@ -195,6 +196,9 @@ margin-top: 45px;
   .event-details {
     margin: 0 auto !important;
   }
+.contact-container{
+  margin-left: 0px !important;
+}
   .contact-img {
     width: 85px !important;
     /*width: 2% !important;*/
@@ -227,5 +231,15 @@ margin-top: 45px;
     /*font-size: 15px !important;*/
     /*padding-left: 5px;*/
     /*padding-right: 5px;*/
+  }
+  .top-nav-btn {
+    float: right;
+    text-align: center;
+    /*padding-top: 8px;*/
+    font-size: 12px;
+    /*padding: 8px;*/
+    /*border-left: 1px solid #000000;*/
+    /*padding-right: 10px;*/
+
   }
 }
