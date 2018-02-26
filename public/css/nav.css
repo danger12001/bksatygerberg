@@ -140,12 +140,12 @@ margin-top: 45px;
   }
   .nav-logo {
     /*display: n*/
-    width: 50px;
-    height: 50px;
-    margin: 0px;
-    padding: 0px;
-    margin-top: -35px;
-    margin-left: 10px;
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    margin-top: -35px !important;
+    margin-left: 10px !important;
     /*margin-bottom: 50px;*/
   }
   .join-button {
@@ -229,8 +229,8 @@ margin-top: 45px;
   }
   .nav-logo {
     /*display: n*/
-    width: 150px;
-    height: 150px;
+    width: 100px !important;
+    height: 100px !important;
     /*margin: 0px;*/
     /*padding: 0px;*/
     /*margin-top: -35px;*/
