@@ -218,7 +218,7 @@ input:focus:not([read-only]) {
   width: 80%;
   margin: auto;
   margin-top: 20px !important;
-  height: 44%;
+  /*height: 44%;*/
 }
 .detail-leader-container {
   float: right;
